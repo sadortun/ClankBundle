@@ -1,5 +1,5 @@
-#Client Setup
-###Step 1: Include Javascript
+# Client Setup
+### Step 1: Include Javascript
 To include the relevant javascript libraries necessary for Clank, add these to your root layout file just before the closing body tag.
 
 ```twig
@@ -26,7 +26,7 @@ php app/console assetic:dump --env=prod --no-debug
 This is to ensure the client js libraries are available.
 
 
-###Step 2: Clank.js
+### Step 2: Clank.js
 
 Once the javascript is included, you can start using Clank.js to interact with the web socket server.
 
