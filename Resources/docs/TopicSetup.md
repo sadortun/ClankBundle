@@ -1,10 +1,10 @@
-#Topic Handler Setup
+# Topic Handler Setup
 
 Although the standard Clank PubSub can be useful as a simple channel for allowing messages to be pushed to users, anymore advanced functionality will require custom Topic Handlers.
 
 Similar to RPC, topic handlers are slightly specialised Symfony2 services. They must implement the interface "JDare\ClankBundle\Topic\TopicInterface"
 
-##Step 1: Create the Topic Handler Service Class
+## Step 1: Create the Topic Handler Service Class
 
 ```php
 <?php
@@ -86,7 +86,7 @@ $conn is the connection object of the client who has initiated this event.
 
 $topic is the [Topic object](http://socketo.me/api/class-Ratchet.Wamp.Topic.html). This also contains a list of current subscribers, so you don't have to manually keep track.
 
-##Step 2: Register your service with Symfony
+## Step 2: Register your service with Symfony
 
 If you are using XML, edit "YourBundle/Resources/config/services.xml", add:
 
@@ -96,7 +96,7 @@ If you are using XML, edit "YourBundle/Resources/config/services.xml", add:
 
 For other formats, please check the [Symfony2 Documents](http://symfony.com/doc/master/book/service_container.html)
 
-##Step 3: Register your service with Clank
+## Step 3: Register your service with Clank
 
 Open your "app/config/config.yml" and append the following:
 

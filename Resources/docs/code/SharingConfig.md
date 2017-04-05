@@ -1,8 +1,8 @@
-#Share config between server and client
+# Share config between server and client
 
 Its useful to keep the server configuration isolated from the application. Here is a trivial way to share the Clank Config between the server and the client.
 
-###Step 1: Add the connection details to parameters.yml
+### Step 1: Add the connection details to parameters.yml
 
 In your "app/config/parameters.yml"
 
@@ -13,7 +13,7 @@ In your "app/config/parameters.yml"
 
 ```
 
-###Step 2: Replace the config.yml with the parameters
+### Step 2: Replace the config.yml with the parameters
 
 Open "app/config/config.yml" and change the following:
 
@@ -33,7 +33,7 @@ clank:
       host: "%clank_host%"
 ```
 
-###Step 3: Add to twig for client side access
+### Step 3: Add to twig for client side access
 
 So the client side templating can access those same parameters, add this to your "app/config/config.yml"
 
@@ -45,7 +45,7 @@ twig:
         clank_port:    "%clank_port%"
 ```
 
-###Step 4: Render in template
+### Step 4: Render in template
 
 In your root twig layout template, add the following
 

@@ -6,7 +6,7 @@ In Symfony RPCs are setup as services. This allows you full control of what to d
 
 If you are new to services, please see [Symfony2: Service Container](http://symfony.com/doc/master/book/service_container.html)
 
-##Step 1: Create the Service Class
+## Step 1: Create the Service Class
 
 ```php
 <?php
@@ -39,7 +39,7 @@ To return a result from the procedure, simply return anything other than false o
 
 If you return false or null, it will return an error to the client, informing them the procedure call did not work correctly.
 
-##Step 2: Register your service with Symfony
+## Step 2: Register your service with Symfony
 
 If you are using XML, edit "YourBundle/Resources/config/services.xml", add:
 
@@ -49,7 +49,7 @@ If you are using XML, edit "YourBundle/Resources/config/services.xml", add:
 
 For other formats, please check the [Symfony2 Documents](http://symfony.com/doc/master/book/service_container.html)
 
-##Step 3: Register your service with Clank
+## Step 3: Register your service with Clank
 
 Open your "app/config/config.yml" and append the following:
 

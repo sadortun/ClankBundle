@@ -1,10 +1,10 @@
-#Periodic Function Services
+# Periodic Function Services
 
 With realtime applications, sometimes you need code to be executed regardless of events, e.g. a matchmaking engine.
 
 With clank these can easily be added and will run within the [React Server](http://reactphp.org/) event loop.
 
-##Step 1: Create the Periodic Service Class
+## Step 1: Create the Periodic Service Class
 
 Every periodic service must implement the PeriodicInterface.
 
@@ -30,7 +30,7 @@ class AcmePeriodic implements PeriodicInterface
 
 ```
 
-##Step 2: Register your service with Symfony
+## Step 2: Register your service with Symfony
 
 If you are using XML, edit "YourBundle/Resources/config/services.xml", add:
 
@@ -40,7 +40,7 @@ If you are using XML, edit "YourBundle/Resources/config/services.xml", add:
 
 For other formats, please check the [Symfony2 Documents](http://symfony.com/doc/master/book/service_container.html)
 
-##Step 3: Register your service with Clank
+## Step 3: Register your service with Clank
 
 Open your "app/config/config.yml" and append the following:
 

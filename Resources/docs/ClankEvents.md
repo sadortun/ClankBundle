@@ -1,4 +1,4 @@
-#Clank Events
+# Clank Events
 
 Sometimes you will need to perform a server side action when a user connects or disconnects. Clank will fire events for 3 reasons:
 
@@ -8,7 +8,7 @@ Sometimes you will need to perform a server side action when a user connects or 
 
 By utilising Symfony2 Event Listeners, you can be notified when any of these events occur.
 
-###Step 1: Create Event Listener Class
+### Step 1: Create Event Listener Class
 
 Create a [Symfony 2 event listener class](http://symfony.com/doc/current/cookbook/service_container/event_listener.html)
 
@@ -61,7 +61,7 @@ class AcmeClientEventListener
 }
 ```
 
-###Step 2: Register it as a service
+### Step 2: Register it as a service
 
 Add this to your bundles "services.xml"
 
