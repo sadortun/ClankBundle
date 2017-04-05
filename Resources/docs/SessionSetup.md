@@ -1,4 +1,4 @@
-#Session sharing
+# Session sharing
 
 Thanks to Ratchet its easy to get the shared info from the same website session. As per the [Ratchet documentation](http://socketo.me/docs/sessions), you must use a session handler other than the native one, such as [Symfony PDO Session Handler](http://symfony.com/doc/master/cookbook/configuration/pdo_session_storage.html).
 
